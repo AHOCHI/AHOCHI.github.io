@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="authoriiiiii" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >AHOCHI</a>
+            </li>
+            <li>
+                <a href="OurApI.html" onclick = $("#menu-close").click(); >Our API</a>
+            </li>
+            <li>
+                <a href="OurResearch.html" onclick = $("#menu-close").click(); >ourResearch</a>
+            </li>
+            <li>
+                <a href="Progress.html" onclick = $("#menu-close").click(); >Progress</a>
+            </li>
+            <li>
+                <a href="Team2016.html" onclick = $("#menu-close").click(); >Team2016</a>
+            </li>
+            <li>
+                <a href="Contact.html" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-left">
+            <h2>Our API</h2>
+            <ul style="list-style-type:circle">
+              <p>Show All Providers</p>
+  <li>URL - /api/providers/</li>
+  <li>Method - GET</li>
+  <p>Add New Provider</P>
+<li>URL - /api/providers/</li>
+<li>	Method - POST</li>
+
+<p>•	Show a Provider</P>
+<li>	URL - /api/providers/:id</li>
+<li>	Method - GET</li>
+<li>	URL Param - Required: id=[ObjectId] - </li>
+<p>	Update a Provider</P>
+<li>	URL - /api/providers/:id</li>
+<li>	Method - PUT</li>
+<li>	URL Param - Required: id=[ObjectId] </li>
+<p>	Delete a Provider</P>
+<li>	URL - /api/providers/:id</li>
+<li>	Method - DELETE</li>
+<li>URL Param - Required: id=[ObjectId] -</li>
+<p>	Search All Providers</P>
+<li>	URL - /api/providers/search/:search_string</li>
+<li>	METHOD – GET</</li>
+<li>	URL Param - Required: search_string=[string] - e</li>
+<p>	Show All Providers in a City</P>
+<li>	URL - /api/providers/by_city/:city</li>
+<li>	METHOD – GET</li>
+<li>URL Param - Required: city=[string] - </li>
+<p>	Show All Providers in a City by Service</P>
+<li>	URL - /api/providers/by_city/:city/by_service/:service</li>
+<li>	METHOD – GET</li>
+<li>	URL Param - Required: city=[string], service=[string] </li>
+<p>	Search All Providers in a City</P>
+<li>URL - /api/providers/by_city/:city/:search_string</li>
+<li>	METHOD – GET</li>
+<li>	URL Param - Required: city=[string], search_string=[string] - </li>
+<p>	Search All Providers in a City by Service</P>
+<li>URL - /api/providers/by_city/:city/by_service/:service/:search_string</li>
+<li>METHOD – GET</li>
+<li>URL Param - Required: city=[string], service=[string], search_string=[string]</li>
+<p>		Show All Providers in a Zip Code</P>
+<li>	URL - /api/providers/by_zip/:zip</li>
+<li>METHOD – GET</li>
+<li>	URL Param - Required: zip=[string]</li>
+<p>	Show All Providers in a Zip Code by Service</P>
+<li>	URL - /api/providers/by_zip/:zip/by_service/:service</li>
+<li>METHOD – GET</li>
+<li>URL Param - Required: zip=[string], service=[string] - </li>
+<p>	Search All Providers in a Zip Code</P>
+<li>URL - /api/providers/by_zip/:zip/:search_string</li>
+<li>METHOD – GET</li>
+<li>	URL Param - Required: zip=[string], search_string=[string] - example: /api/providers/by_zip/45214/shelters</li>
+<p>	Search All Providers in a Zip Code by Service</P>
+<li>	URL - /api/providers/by_zip/:zip/by_service/:service/:search_string</li>
+<li>	METHOD – GET</li>
+<li>	URL Param - Required: zip=[string], service=[string], search_string=[string] </li>
+<p>		Show All Providers in a State</P>
+<li>URL - /api/providers/by_state/:state</li>
+<li>METHOD – GET</li>
+<li>	URL Param - Required: state=[string]</li>
+<p>		Show All Providers in a State by Service</P>
+<li>	URL - /api/providers/by_state/:state/by_service/:service</li>
+<li>	METHOD – GET</li></li>
+<li>	URL Param - Required: state=[string], service=[string]</li>
+<p>	search All Providers in a State</P>
+<li>	URL - /api/providers/by_state/:state/:search_string</li>
+<li>	METHOD – GET</li>
+<li>	URL Param - Required: state=[string], search_string=[string]</li> -
+<p>		Search All Providers in a State by Service</P>
+<li>	URL - /api/providers/by_state/:state/by_service/:service/:search_string</li>
+<li>	METHOD – GET</li>
+<li>	URL Param - Required: state=[string], service=[string], search_string=[string] - </li>
+<p>	Show All Providers which offer services in a County</P>
+<li>	URL - /api/providers/by_county/:county</li>
+<li>METHOD – GET</li>
+<li>URL Param - Required: county=[string] </li>
+<p>Show All Providers which offer services in a County by Service</P>
+<li>	URL - /api/provider/by_county/:county/by_service/:service</li>
+<li>	METHOD – GET</li>
+<li>URL Param - Required: county=[string], service=[string] - </li>
+<p>	Search All Providers which offer services in a County</P>
+<li>	URL - /api/providers/by_county/:county/:search_string</li>
+<li>	METHOD – GET</li>
+<li>URL Param - Required: county=[string], search_string=[string] </li>
+<p>	Search All Providers in a County by Service</P>
+<li>URL - /api/providers/by_county/:county/by_service/:service/:search_string</li>
+<li>	METHOD – GET</li>
+<li>	URL Param - Required: state=[string], service=[string], search_string=[string] -</li>
+<li>	URL - /api/providers/by_service/:service</li>
+<li>	METHOD – GET</li>
+<li>URL Param - Required: service=[string] -</li>
+<p>Show All Providers which offer a specific service near an address</P>
+<li>	URL - /api/providers/by_service/:service/near/:address/:max_dist_miles</li>
+<li>	METHOD – GET</li>
+<li>URL Param - Required: service=[string], address=[string], max_dist_miles=[number] -</li>
+<p>	Show All Distinct Cities</P>
+<li>	URL - /api/cities/</li>
+<li>	Method - GET</li>
+<p>	Show All Distinct Cities By State</P>
+<li>URL - /api/cities/:state</li>
+<li>Method - GET</li>
+<li>URL Param - Required: state=[string] - example: /api/cities/OH</li>
+<p>Show All Distinct Zip Codes</P>
+<li>	URL - /api/zips/</li>
+<li>Method - GET</li>
+<p>	Show All Distinct Zip Codes By State</P>
+<li>	URL - /api/zips/:state</li>
+<li>Method - GET</li>
+<li>URL Param - Required: state=[string] </li>
+<p>	Show All Distinct Counties</P>
+<li>	URL - /api/counties/</li>
+<li>Method - GET</li>
+<p>	Show All Distinct Counties By State</P>
+<li>	URL - /api/counties/:state</li>
+<li>	Method - GET</li>
+<li>	URL Param - Required: state=[string]</li>
+<p>	Show All Distinct States</P>
+<li>URL - /api/states/</li>
+<li>Method - GET</li>
+<p>Show All Distinct Services</P>
+<li>	URL - /api/services/</li>
+<li>	Method - GET</li>
+
+
+</ul>
+            <br>
+
+        </div>
+    </header>
+
+    <!-- About -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Northern Kentucky University</strong>
+                    </h4>
+                    <p>100 Louie B Nunn Dr, Highland Heights,<br>KY 41099</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (859) 572-5220</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="www.nku.edu">www.nku.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <hr class="small">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

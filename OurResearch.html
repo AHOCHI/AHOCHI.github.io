@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="authoriiiiii" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >AHOCHI</a>
+            </li>
+            <li>
+                <a href="OurApI.html" onclick = $("#menu-close").click(); >Our API</a>
+            </li>
+            <li>
+                <a href="OurResearch.html" onclick = $("#menu-close").click(); >ourResearch</a>
+            </li>
+            <li>
+                <a href="Progress.html" onclick = $("#menu-close").click(); >progress</a>
+            </li>
+            <li>
+                <a href="Team2016.html" onclick = $("#menu-close").click(); >Team2016</a>
+            </li>
+            <li>
+                <a href="Contact.html" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h2>Our Research</h2>
+            <h3></h3>
+            <p>
+2016:This year decided to work on implementation of the project one step ahead. Main focus was in four areas:
+Website, server, database and scraper. </p>
+<p>So we populated the main project on github https://github.com/AHOCHI for easy use to all team members. We broke the whole part into four repositories</P>
+<p>
+
+1. AHOCHI-server
+2. AHOCHI-crawler
+3.AHOCHI-Site
+4. AHOCHI.github.io</p>
+<p>1. AHOCHI-server: This is server part of AHOCHI.Basic purpose of this server is to maintain the API for service providers. Team decided to work on MongoDB.( MongoDB is an open source database that uses a document-oriented data model. MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents).Basic  CRUD operation was used for server API. It directly handle records or data objects; apart from these operations, the records are passive entities for this project. Typically it's just database tables and records to save relevant content or data for the project AHOCHI. This is capable to the  queries the data by state, zip, city, and county, as well as text search.</p>
+2. AHOCHI-crawler: The basic purpose of the web crawler is to finds services and their location and stores that information in the database in this project. Currently being developed using PyCharm Community Edition 2016 .  Crawler will run across the  various websites to search for potential charities and upload them to the AHOCHI server.
+ Web Crawler or Spider is a perfect platform for crawling the data. A Search Engine Spider (also known as a crawler, Robot, SearchBot or simply a Bot) is a program that most search engines use to find what’s new on the Internet. There are many types of web spiders in use, but for now, we’re only interested in the Bot that actually “crawls” the web and collects documents to build a searchable index for the different search engines. The program starts at a website and follows every hyperlink on each page for potential services and charities in this part.
+So there are basically three steps that are involved in the web crawling procedure for AHOCHI. First, the search bot starts by crawling the pages of the site. Then it continues indexing the words and content of the site such as senior citizen care, and finally it visit the links (web page addresses or URLs) that are found in our site. When the spider doesn’t find a page, it will eventually be deleted from the index. However, some of the spiders will check again for a second time to verify that the page really is offline. If it finds the page for relevant information it will save to database.
+
+            <br>
+
+        </div>
+    </header>
+
+    <!-- About -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Northern Kentucky University</strong>
+                    </h4>
+                    <p>100 Louie B Nunn Dr, Highland Heights,<br>KY 41099</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (859) 572-5220</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="www.nku.edu">www.nku.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
